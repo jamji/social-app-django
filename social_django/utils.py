@@ -10,7 +10,7 @@ from social_core.backends.utils import get_backend
 from .compat import reverse
 
 
-BACKENDS = settings.AUTHENTICATION_BACKENDS
+BACKENDS = settings.SOCIAL_AUTHENTICATION_BACKENDS
 STRATEGY = getattr(settings, setting_name('STRATEGY'),
                    'social_django.strategy.DjangoStrategy')
 STORAGE = getattr(settings, setting_name('STORAGE'),
